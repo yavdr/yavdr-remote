@@ -1,0 +1,6 @@
+yavdr-remote (0.3.0.2557-0yavdr1) lucid; urgency=high
+
+  * build 
+  * Switch to dpkg-source 3.0 (quilt) format
+
+ -- Holger Schvestka <hotzenplotz5@gmx.de>  Thu, 18 Nov 2010 20:24:29 +0100

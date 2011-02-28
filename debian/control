@@ -1,0 +1,14 @@
+Source: yavdr-remote
+Section: misc
+Priority: optional
+Maintainer: Holger Schvestka <hotzenplotz5@gmx.de>
+Uploaders: Holger Schvestka <hotzenplotz5@gmx.de>
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 7.0.50~)
+
+Package: yavdr-remote
+Architecture: all
+Depends: ${misc:Depends}
+Description: scripts
+ scripts
+
