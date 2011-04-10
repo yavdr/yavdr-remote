@@ -1,0 +1,32 @@
+################################################################################
+# An udev rules file for eventlircd to handle Sundtek DVB devices.
+#
+# This rules file does not start eventlircd. Many applications only check for
+# the lircd socket at application lauch. Therefore, it is better to start
+# eventlircd in an init script so that eventlircd creates the lircd socket
+# before any applications that use LIRC launch.
+################################################################################
+
+# eventlircd only does something for "add" and "remove" actions.
+ACTION!="add|remove", GOTO="end"
+
+# eventlircd only does something "input" subsystem devices.
+SUBSYSTEM!="input", GOTO="end"
+
+# eventlircd can only handle event devices.
+KERNEL!="event[0-9]*", GOTO="end"
+
+# eventlircd ignores devices created by eventlircd.
+ATTRS{name}=="eventlircd", GOTO="end"
+
+#-------------------------------------------------------------------------------
+# Ask eventlircd to handle input event devices created by Sundtek DVB devices.
+#-------------------------------------------------------------------------------
+ATTRS{name}=="Sundtek Ltd. Remote Control", \
+  ENV{eventlircd_enable}="true"
+
+ATTRS{name}=="X10 Wireless Technology Inc USB Receiver", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="03_0bc7_0006.evmap"
+
+LABEL="end"

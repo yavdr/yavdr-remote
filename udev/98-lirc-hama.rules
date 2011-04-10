@@ -1,0 +1,1 @@
+KERNEL=="event*",ATTR{name}=="HID 05a4:9881",SYMLINK="input/ira"
