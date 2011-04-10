@@ -32,11 +32,11 @@ ENV{ID_USB_INTERFACES}=="", IMPORT{program}="usb_id --export %p"
 
 ENV{ID_VENDOR_ID}=="0fe9", ENV{ID_MODEL_ID}=="9010", \
   ENV{lircd_driver}="dvicoo", \
-  ENV{lircd_conf}="/etc/lirc/lircd.conf"
+  ENV{lircd_conf}="/usr/share/yavdr-remote/remotes/dvicoo-lircd.conf"
 
 ENV{ID_VENDOR_ID}=="0b48", ENV{ID_MODEL_ID}=="2003", \
   ENV{lircd_driver}="default", \
-  ENV{lircd_conf}="/usr/share/eventlircd/remotes/ttusbir/ttusbir-lircd.conf" 
+  ENV{lircd_conf}="/usr/share/yavdr-remote/remotes/ttusbir-lircd.conf" 
 
 
 # Enable wake-on-usb for the USB remotes.
