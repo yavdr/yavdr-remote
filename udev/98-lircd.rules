@@ -38,6 +38,10 @@ ENV{ID_VENDOR_ID}=="0b48", ENV{ID_MODEL_ID}=="2003", \
   ENV{lircd_driver}="default", \
   ENV{lircd_conf}="/usr/share/yavdr-remote/remotes/ttusbir-lircd.conf" 
 
+ENV{ID_VENDOR_ID}=="0419", ENV{ID_MODEL_ID}=="0001", \
+  ENV{lircd_driver}="samsung", \
+  ENV{lircd_conf}="/usr/share/yavdr-remote/remotes/samsung-lircd.conf" 
+
 
 # Enable wake-on-usb for the USB remotes.
 ENV{lircd_driver}=="?*", ENV{lircd_conf}=="?*", RUN+="wakeup_enable"
