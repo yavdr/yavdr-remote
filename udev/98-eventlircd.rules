@@ -100,6 +100,10 @@ ENV{ID_VENDOR_ID}=="0755", ENV{ID_MODEL_ID}=="2626", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
 
+ENV{ID_VENDOR_ID}=="0471", ENV{ID_MODEL_ID}=="060c", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
+
 # Enable wake-on-usb for the USB remotes.
 ENV{eventlircd_enable}=="true", RUN+="wakeup_enable"
 
