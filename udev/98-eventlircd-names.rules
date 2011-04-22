@@ -33,4 +33,9 @@ ATTRS{name}=="X10 WTI RF receiver", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="03_0bc7_0006_pollin.evmap"
 
+ATTRS{name}=="TT6400 DVB IR receiver", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="tt6400ir.evmap"
+
+
 LABEL="end"
