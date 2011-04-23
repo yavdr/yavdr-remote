@@ -19,7 +19,7 @@
  KEY_NEXTSONG        = KEY_NEXT        # Next track
  KEY_STOPCD          = KEY_STOP        # Stop
  ctrl+KEY_R          = KEY_RED         # Red
- KEY_BACKSPACE       = KEY_BACK        # Back
+ KEY_BACKSPACE       = KEY_EXIT        # Back
  KEY_D               = KEY_INFO        # Information (also used for Mouse Right)
  KEY_UP              = KEY_UP          # Direction Up
  KEY_DOWN            = KEY_DOWN        # Direction Down
