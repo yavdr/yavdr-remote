@@ -24,7 +24,7 @@
  ctrl+shift+KEY_F5       = KEY_VIDEO
  ctrl+shift+KEY_F6       = KEY_MP3
  ctrl+shift+KEY_F7       = KEY_MEDIA
- ctrl+shift+KEY_F8       = KEY_TV
+ ctrl+shift+KEY_F8       = KEY_POWER
  ctrl+shift+KEY_F9       = KEY_ZOOM
 
 
