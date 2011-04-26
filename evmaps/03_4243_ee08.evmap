@@ -26,5 +26,6 @@
  ctrl+shift+KEY_F7       = KEY_MEDIA
  ctrl+shift+KEY_F8       = KEY_POWER
  ctrl+shift+KEY_F9       = KEY_ZOOM
+ KEY_102ND               = KEY_CHANNEL
 
 
