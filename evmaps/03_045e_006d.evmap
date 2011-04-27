@@ -1,0 +1,5 @@
+ KEY_AUDIO         = KEY_MP3
+ KEY_CAMERA        = KEY_MEDIA
+ KEY_DVD           = KEY_ZOOM
+ KEY_TUNER         = KEY_ZOOM
+ KEY_EPG           = KEY_TEXT
