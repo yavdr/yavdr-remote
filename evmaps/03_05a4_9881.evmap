@@ -1,4 +1,4 @@
- KEY_HOMEPAGE        = KEY_ CHANNEL        # WWW
+ KEY_HOMEPAGE        = KEY_CHANNEL        # WWW
  KEY_SLEEP           = KEY_POWER       # Sleep
  ctrl+shift+KEY_T    = KEY_YELLOW         #
  ctrl+KEY_M          = KEY_BLUE         # 
