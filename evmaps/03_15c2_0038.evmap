@@ -47,13 +47,14 @@
 #KEY_ZOOM				#Taste Zoom
 #KEY_SCREEN				#Taste Full Screen
 #KEY_DVD				#Taste DVD
-#KEY_MENU				#Taste Menu (geändert als GO)
+#KEY_MENU				#Taste Menu
 #KEY_SUBTITLE				#Taste Subtitle
 #KEY_LANGUAGE				#Taste Audio
 
 #Mein Mapping
+KEY_EXIT		=KEY_ESC	#Taste App. Exit
 KEY_PROG1		=KEY_MENU	#Taste GO
-KEY_ESC			=KEY_EXIT	#Taste ESC
+KEY_ESC			=KEY_EXIT	#Taste ESC/CLEAR
 KEY_VIDEO		=KEY_RED	#Taste Videos
 KEY_AUDIO		=KEY_GREEN	#Taste Music
 KEY_TV			=KEY_YELLOW	#Taste TV
