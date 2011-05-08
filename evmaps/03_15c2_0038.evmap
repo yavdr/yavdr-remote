@@ -1,0 +1,62 @@
+# Alle Tasten der RM200 FB
+#KEY_EXIT				#Taste App. Exit
+#KEY_POWER				#Taste Power
+#KEY_RECORD				#Taste links oben mit rotem Punkt neben Play
+#KEY_PLAY				#Taste Play
+#KEY_EJECTCD				#Taste rechts oben neben Play
+#KEY_REWIND				#Taste Zurückspulen
+#KEY_PAUSE				#Taste Pasue
+#KEY_FASTFORWARD			#Taste Vorspulen
+#KEY_PREVIOUS				#Taste Sprung zurück
+#KEY_STOP				#Taste Stop
+#KEY_NEXT				#Taste Sprung vor
+#KEY_SPACE				#Taste Seöect/Space
+#KEY_COMPOSE				#Taste rechts, mittig bei Cursortaste
+#KEY_ENTER				#Taste ENTER
+#KEY_CONTEXT_MENU			#Taste links, mittig bei Cursortaste
+#KEY_BACKSPACE				#Taste Backspace
+#KEY_ESC				#Taste ESC/CLEAR
+#KEY_EJECTCLOSECD			#Taste Eject
+#KEY_DASHBOARD				#Taste App. Launcher
+#KEY_PROG1				#Taste GO
+#KEY_CYCLEWINDOWS 			#Taste TaskSwitcher
+#KEY_MUTE				#Taste Mute
+#KEY_VOLUMEUP				#Wippe + VOL
+#KEY_VOLUMEDOWN				#Wippe - VOL
+#KEY_CHANNELUP				#Wippe + CH
+#KEY_CHANNELDOWN			#Wippe - CH
+#KEY_TIME				#Taste Timer
+#KEY_NUMERIC_1				#Taste 1
+#KEY_NUMERIC_2				#Taste 2
+#KEY_NUMERIC_3				#Taste 3
+#KEY_NUMERIC_4				#Taste 4
+#KEY_NUMERIC_5				#Taste 5
+#KEY_NUMERIC_6				#Taste 6
+#KEY_NUMERIC_7				#Taste 7
+#KEY_NUMERIC_8				#Taste 8
+#KEY_NUMERIC_9				#Taste 9
+#KEY_NUMERIC_STAR			#Taste Stern
+#KEY_NUMERIC_0				#Taste 0
+#KEY_NUMERIC_POUND			#Taste Raute
+#KEY_VIDEO				#Taste Videos
+#KEY_AUDIO				#Taste Music
+#KEY_TV					#Taste TV
+#KEY_CAMERA				#Taste Pictures
+#KEY_BOOKMARKS				#Taste Bookmark
+#KEY_MEDIA				#Taste Thumbnail
+#KEY_ZOOM				#Taste Zoom
+#KEY_SCREEN				#Taste Full Screen
+#KEY_DVD				#Taste DVD
+#KEY_MENU				#Taste Menu (geändert als GO)
+#KEY_SUBTITLE				#Taste Subtitle
+#KEY_LANGUAGE				#Taste Audio
+
+#Mein Mapping
+KEY_PROG1		=KEY_MENU	#Taste GO
+KEY_ESC			=KEY_EXIT	#Taste ESC
+KEY_VIDEO		=KEY_RED	#Taste Videos
+KEY_AUDIO		=KEY_GREEN	#Taste Music
+KEY_TV			=KEY_YELLOW	#Taste TV
+KEY_CAMERA		=KEY_BLUE	#Taste Pictures
+KEY_CYCLEWINDOWS 	=KEY_TV		#Taste TaskSwitcher
+KEY_EJECTCLOSECD	=KEY_INFO	#Taste Eject
