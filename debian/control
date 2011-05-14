@@ -10,5 +10,5 @@ Package: yavdr-remote
 Architecture: all
 Depends: ${misc:Depends}, eventlircd, ati-remote-dkms, hid-gyration-dkms
 Description: scripts
- scripts
+ scripts yavdr-remote evmaps 
 
