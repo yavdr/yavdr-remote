@@ -54,15 +54,15 @@ ATTRS{name}=="bdremoteng", \
 # Ask eventlircd to handle input event devices created by ir-core (kernel).
 #-------------------------------------------------------------------------------
 SUBSYSTEMS=="rc", \
-  ENV{eventlircd_enable}="true" \
+  ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="ircore.evmap"
 
 #-------------------------------------------------------------------------------
 # overwrites for ircore mapping
 #-------------------------------------------------------------------------------
 
-SUBSYSTEM=="input", ATTRS{idVendor}=="1c73", ATTRS{idProduct}=="861f"
-  ENV{eventlircd_enable}="true" \
+SUBSYSTEM=="input", ATTRS{idVendor}=="1c73", ATTRS{idProduct}=="861f", \
+  ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="anysee.evmap"
 
 #-------------------------------------------------------------------------------
