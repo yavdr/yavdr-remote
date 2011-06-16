@@ -3,4 +3,4 @@
  KEY_DVD           = KEY_ZOOM
  KEY_TUNER         = KEY_ZOOM
  KEY_EPG           = KEY_TEXT
- meta              = KEY_MENU
+ KEY_PROG1         = KEY_MENU
