@@ -8,7 +8,7 @@
  ctrl+KEY_O          = KEY_VIDEO        # video 
  ctrl+KEY_G          = KEY_MEDIA     # my-pictures
  ctrl+KEY_T          = KEY_TV          # Live TV
- ctrl+shift+KEY_M    = KEY_MP3         # audio
+ ctrl+shift+KEY_M    = KEY_AUDIO         # audio
  KEY_PLAYPAUSE       = KEY_PLAY   # Play (also used for Pause)
  KEY_PLAYPAUSE       = KEY_PAUSE   # Pause (also used for Play)
  ctrl+shift+KEY_B    = KEY_REWIND      # Reverse
