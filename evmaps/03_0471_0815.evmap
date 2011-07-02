@@ -1,6 +1,6 @@
  KEY_EPG            = KEY_TV
  KEY_PVR            = KEY_MEDIA
- KEY_TUNER          = KEY_MP3
+ KEY_TUNER          = KEY_AUDIO
  KEY_DVD            = KEY_VIDEO
  KEY_NUMERIC_STAR   = KEY_ZOOM
  KEY_NUMERIC_POUND  = KEY_TEXT

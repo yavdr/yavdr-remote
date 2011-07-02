@@ -1,12 +1,12 @@
  KEY_WWW             = KEY_GREEN         # WWW
- KEY_SLEEP           = KEY_POWER       # Sleep
+ KEY_SLEEP           = KEY_POWER2       # Sleep
  KEY_MAIL            = KEY_YELLOW         # My TV
  ctrl+KEY_A          = KEY_RADIO         # My Music
  alt+KEY_ENTER       = KEY_BLUE
  KEY_HOMEPAGE        = KEY_GREEN       # 
  ctrl+KEY_E          = KEY_VIDEO      # My Videos
  ctrl+KEY_I          = KEY_MEDIA        # 
- ctrl+KEY_M          = KEY_MP3
+ ctrl+KEY_M          = KEY_AUDIO
  ctrl+shift+KEY_T    = KEY_TV          # Live TV
  ctrl+shift+KEY_M    = KEY_DVD         # DVD Menu
  KEY_PLAYPAUSE       = KEY_PLAYPAUSE   # Play (also used for Pause)
@@ -15,11 +15,11 @@
  shift+KEY_3         = KEY_TEXT
  ctrl+shift+KEY_B    = KEY_REWIND      # Reverse
  ctrl+shift+KEY_F    = KEY_FORWARD     # Forward
- KEY_PREVIOUSSONG    = KEY_PREVIOUS    # Pre-track
+ KEY_PREVIOUSSONG    = KEY_BACK    # Pre-track
  KEY_NEXTSONG        = KEY_NEXT        # Next track
  KEY_STOPCD          = KEY_STOP        # Stop
  ctrl+KEY_R          = KEY_RED         # Red
- KEY_BACKSPACE       = KEY_EXIT        # Back
+ KEY_BACKSPACE       = KEY_ESC        # Back
  KEY_D               = KEY_INFO        # Information (also used for Mouse Right)
  KEY_UP              = KEY_UP          # Direction Up
  KEY_DOWN            = KEY_DOWN        # Direction Down
@@ -36,7 +36,7 @@
  alt+meta+KEY_ENTER  = KEY_MENU        # Start Key
  alt+KEY_F4          = KEY_CLOSE       # Close
  KEY_ESC             = KEY_CLEAR       # Clear
- KEY_ENTER           = KEY_ENTER       # Enter (also used for Direction OK)
+ KEY_ENTER           = KEY_OK       # Enter (also used for Direction OK)
  ctrl+KEY_D          = KEY_INFO        # info
  KEY_KPASTERISK      = KEY_ZOOM        # *
  numlock+alt+KEY_KP3 = KEY_TEXT        # #
