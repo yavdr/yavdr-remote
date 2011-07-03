@@ -26,17 +26,17 @@
 #KEY_CHANNELUP				#Wippe + CH
 #KEY_CHANNELDOWN			#Wippe - CH
 #KEY_TIME				#Taste Timer
-#KEY_NUMERIC_1				#Taste 1
-#KEY_NUMERIC_2				#Taste 2
-#KEY_NUMERIC_3				#Taste 3
-#KEY_NUMERIC_4				#Taste 4
-#KEY_NUMERIC_5				#Taste 5
-#KEY_NUMERIC_6				#Taste 6
-#KEY_NUMERIC_7				#Taste 7
-#KEY_NUMERIC_8				#Taste 8
-#KEY_NUMERIC_9				#Taste 9
+KEY_NUMERIC_1	= KEY_1			#Taste 1
+KEY_NUMERIC_2	= KEY_2			#Taste 2
+KEY_NUMERIC_3	= KEY_3			#Taste 3
+KEY_NUMERIC_4	= KEY_4			#Taste 4
+KEY_NUMERIC_5	= KEY_5			#Taste 5
+KEY_NUMERIC_6	= KEY_6			#Taste 6
+KEY_NUMERIC_7	= KEY_7			#Taste 7
+KEY_NUMERIC_8	= KEY_8			#Taste 8
+KEY_NUMERIC_9	= KEY_9			#Taste 9
 #KEY_NUMERIC_STAR			#Taste Stern
-#KEY_NUMERIC_0				#Taste 0
+KEY_NUMERIC_0	= KEY_0			#Taste 0
 #KEY_NUMERIC_POUND			#Taste Raute
 #KEY_VIDEO				#Taste Videos
 #KEY_AUDIO				#Taste Music
