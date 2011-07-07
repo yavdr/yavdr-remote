@@ -6,7 +6,7 @@
 0x001a KEY_CHANNEL
 0x001b KEY_INFO
 0x000c KEY_MODE
-0x0014 KEY_UP
+0x0014 KEY_UP 
 0x0015 KEY_DOWN
 0x0016 KEY_LEFT
 0x0017 KEY_RIGHT
@@ -20,12 +20,13 @@
 0x0012 KEY_PREVIOUS
 0x000f KEY_MUTE
 0x0037 KEY_RECORD
+0x0035 KEY_PLAY
+0x0030 KEY_PAUSE
 0x0036 KEY_STOP
-0x0032 KEY_REWIND # Hier wird von irw ein falscher Keycode anzeigt: "a8 0 KEY_REWIND devinput" (bei gestopptem remoted Scancode 32)
+0x0032 KEY_REWIND
 0x0034 KEY_FASTFORWARD
-0x0024 KEY_BACK # Diese Taste wird nicht korrekt gemappt, irw zeigt "ae 0 KEY_EXIT devinput" (Hat devinput noch andere Mapping-Quellen?)
+0x0024 KEY_BACK
 0x001e KEY_NEXT
-# Die Nummerntasten werden auch falsch von devinput überschrieben, Ausgabe ist z.B. "201 0 KEY_NUMERIC_1 devinput" statt dem erwarteten "01 0 KEY_1 devinput"
 0x0001 KEY_1
 0x0002 KEY_2
 0x0003 KEY_3
@@ -42,3 +43,4 @@
 0x002e KEY_GREEN
 0x0038 KEY_YELLOW
 0x0029 KEY_BLUE
+0x003c KEY_SUBTITLE # Taste "FULL" Für die kleine Hauppauge Remote http://www.vdr-wiki.de/wiki/index.php/Datei:Fernbedienung-hauppauge-nova-t.jpg
