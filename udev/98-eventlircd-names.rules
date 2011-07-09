@@ -44,4 +44,5 @@ ATTRS{name}=="Nuvoton w836x7hg Infrared Remote Transceiver", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="nuvoton.evmap"
 
+
 LABEL="end"
