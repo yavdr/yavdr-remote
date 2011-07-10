@@ -3,4 +3,6 @@
 if [ install = "$1" -o upgrade = "$1" ]; then 
   dpkg-divert --package yavdr-remote --add --rename \
    --divert /etc/eventlircd.d/03_0766_0204.evmap.dontremove /etc/eventlircd.d/03_0766_0204.evmap
+  dpkg-divert --package yavdr-remote --add --rename \
+   --divert /etc/eventlircd.d/03_147a_e02d.evmap.dontremove /etc/eventlircd.d/03_147a_e02d.evmap
 fi
