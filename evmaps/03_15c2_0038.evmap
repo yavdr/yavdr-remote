@@ -18,3 +18,4 @@ KEY_TV			=KEY_YELLOW	#Taste TV
 KEY_CAMERA		=KEY_BLUE	#Taste Pictures
 KEY_CYCLEWINDOWS 	=KEY_TV		#Taste TaskSwitcher
 KEY_EJECTCLOSECD	=KEY_INFO	#Taste Eject
+KEY_ENTER               = KEY_OK 
