@@ -42,7 +42,7 @@ ATTRS{name}=="i2c IR (Hauppauge WinTV PVR-350", \
 
 ATTRS{name}=="Nuvoton w836x7hg Infrared Remote Transceiver", \
   ENV{eventlircd_enable}="true", \
-  ENV{eventlircd_evmap}="nuvoton.evmap"
+  ENV{eventlircd_evmap}="mce.evmap"
 
 
 LABEL="end"

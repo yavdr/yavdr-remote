@@ -109,11 +109,11 @@ ENV{ID_VENDOR_ID}=="1241", ENV{ID_MODEL_ID}=="e000", \
 
 ENV{ID_VENDOR_ID}=="147a", ENV{ID_MODEL_ID}=="e02d", \
   ENV{eventlircd_enable}="true", \
-  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
+  ENV{eventlircd_evmap}="mce.evmap"
 
 ENV{ID_VENDOR_ID}=="147a", ENV{ID_MODEL_ID}=="e03a", \
   ENV{eventlircd_enable}="true", \
-  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
+  ENV{eventlircd_evmap}="mce.evmap"
 
 ENV{ID_VENDOR_ID}=="0c16", ENV{ID_MODEL_ID}=="0002", \
   ENV{eventlircd_enable}="true", \
