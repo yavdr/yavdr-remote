@@ -46,6 +46,6 @@ ATTRS{name}=="Nuvoton w836x7hg Infrared Remote Transceiver", \
 
 ATTRS{name}=="cx88 IR (Hauppauge WinTV-HVR400", \
   ENV{eventlircd_enable}="true", \
-  RUN+="/usr/bin/ir-keytable -p RC-5 -s $name", \
+  ENV{eventlircd_evmap}="nova_hd_s2.evmap" 
 
 LABEL="end"
