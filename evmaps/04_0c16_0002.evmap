@@ -20,9 +20,12 @@ KEY_KPASTERISK   = KEY_NUMERIC_STAR
 KEY_SLEEP        = KEY_POWER2
 KEY_STOPCD       = KEY_STOP
 KEY_HOME         = KEY_PVR
+KEY_DVD          = KEY_MENU
 
 # shift+KEY3 matches the button labelled "*" on the bottom left of the remote
 shift+KEY_3      = KEY_AUDIO
 
 # shift+KEY8 matches the button labelled "#" on the bottom right of the remote
 shift+KEY_8      = KEY_MODE
+
+#KEY_DVD - might make sense to include this too
