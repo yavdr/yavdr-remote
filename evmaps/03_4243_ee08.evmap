@@ -28,5 +28,6 @@
  ctrl+shift+KEY_F9       = KEY_ZOOM
  KEY_102ND               = KEY_RECORD
 # KEY_ESC                 = KEY_EXIT
+KEY_ENTER                 = KEY_OK
 
 
