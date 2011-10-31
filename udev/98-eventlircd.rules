@@ -92,7 +92,10 @@ ENV{ID_VENDOR_ID}=="1934", ENV{ID_MODEL_ID}=="5168", \
   ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
 
 ENV{ID_VENDOR_ID}=="0755", ENV{ID_MODEL_ID}=="2626", \
-  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_enable}="true", \rc_keymaps/HOPLOrc6 |  109 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 109 insertions(+), 0 deletions(-)
+ create mode 100644 rc_keymaps/HOPLOrc6
+
   ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
 
 ENV{ID_VENDOR_ID}=="045e", ENV{ID_MODEL_ID}=="006d", \
@@ -132,6 +135,10 @@ ENV{ID_VENDOR_ID}=="0471", ENV{ID_MODEL_ID}=="0815", \
   ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
 
 ENV{ID_VENDOR_ID}=="15c2",ENV{ID_MODEL_ID}=="ffdc", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
+
+ENV{ID_VENDOR_ID}=="15c2", ENV{ID_MODEL_ID}=="0035", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
 
