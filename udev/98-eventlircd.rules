@@ -155,6 +155,10 @@ ENV{ID_VENDOR_ID}=="18b1", ENV{ID_MODEL_ID}=="0037", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
 
+ENV{ID_VENDOR_ID}=="04b4", ENV{ID_MODEL_ID}=="0101", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
+
 ENV{ID_VENDOR_ID}=="1784", ENV{ID_MODEL_ID}=="0004", \
 ENV{eventlircd_enable}="true", \
 ENV{eventlircd_evmap}="default.evmap"
