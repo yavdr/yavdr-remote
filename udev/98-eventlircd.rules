@@ -164,7 +164,7 @@ ENV{ID_VENDOR_ID}=="1784", ENV{ID_MODEL_ID}=="0004", \
   ENV{eventlircd_evmap}="default.evmap"
 
 # Enable wake-on-usb for the USB remotes.
-  ENV{eventlircd_enable}=="true", RUN+="wakeup_enable"
+ENV{eventlircd_enable}=="true", RUN+="wakeup_enable"
 
 LABEL="end-usb"
 
