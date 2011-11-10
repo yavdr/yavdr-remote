@@ -1,9 +1,7 @@
- meta                = KEY_MENU
- KEY_NUMERIC_STAR    = KEY_ZOOM
- KEY_DVD             = KEY_VIDEO
- KEY_TUNER           = KEY_MP3
- KEY_PVR             = KEY_TV
- KEY_EPG             = KEY_MEDIA
- KEY_NUMERIC_POUND   = KEY_ZOOM
- KEY_DELETE          = KEY_CLEAR
- 
+ KEY_AUDIO         = KEY_MP3
+ KEY_CAMERA        = KEY_MEDIA
+ KEY_TUNER         = KEY_AUDIO
+ KEY_DVD           = KEY_VIDEO
+ KEY_NUMERIC_STAR  = KEY_ZOOM
+ KEY_NUMERIC_POUND = KEY_TEXT
+ KEY_DELETE        = KEY_CLEAR
