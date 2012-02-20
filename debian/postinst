@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+case "$1" in
+  configure)
+    # prefill hdf
+    . /usr/share/yavdr/helpers/hdf_prefill.sh
+
+    hdf_prefill "system.remoted" "eventlircd"
+  ;;
+
+esac
+
+exit 0
+
