@@ -3,7 +3,7 @@
 case "$1" in
   configure)
     # prefill hdf
-    . /usr/share/yavdr/helpers/hdf_prefill.sh
+    . /usr/share/yavdr/helpers/hdf_prefill
 
     hdf_prefill "system.remoted" "eventlircd"
   ;;
