@@ -52,4 +52,7 @@ ATTRS{name}=="cx88 IR (Hauppauge WinTV-HVR400", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="nova_hd_s2.evmap" 
 
+ATTRS{name}=="iMON Panel, Knob and Mouse(*:*)", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="imon_knob_panel.evmap" 
 LABEL="end"
