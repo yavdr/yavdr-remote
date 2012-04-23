@@ -1,0 +1,66 @@
+# LIRC - Hardware DataBase
+#
+# THIS IS A GENERATED FILE. DO NOT EDIT.
+#
+# This file lists all the remote controls supported by LIRC
+# in a parseable form.
+#
+# The format is:
+#
+# [remote controls type]
+# description;driver;lirc driver;HW_DEFAULT;lircd_conf;
+#
+#
+Home-brew (16x50 UART compatible serial port);serial;lirc_dev lirc_serial;hw_default;;
+Home-brew (parallel port);parallel;lirc_dev lirc_parallel;hw_default;;
+Network (UDP);udp;none;hw_udp;;
+
+[Home-brew (soundcard input)]
+Simple IR diode (EXPERIMENTAL);dsp;none;hw_dsp;;
+Receiver/transmitter using PortAudio (EXPERIMENTAL);audio;none;hw_audio;;
+IR receiver IC connected to audio input using ALSA (EXPERIMENTAL);audio_alsa;none;hw_audio_alsa;;
+
+[Other (MIDI, Bluetooth, etc.)]
+AOpen XC Cube EA65, EA65-II;ea65;none;hw_ea65;ea65/lircd.conf.ea65;
+Creative LiveDrive midi;livedrive_midi;none;hw_livedrive_midi;creative/lircd.conf.livedrive;
+Creative LiveDrive sequencer;livedrive_seq;none;hw_livedrive_seq;creative/lircd.conf.livedrive;
+Creative iNFRA CDROM;creative_infracd;none;hw_creative_infracd;creative/lircd.conf.infracd;
+Ericsson mobile phone via Bluetooth;bte;none;hw_bte;ericsson/lircd.conf.bte;
+Linux input layer (/dev/input/eventX);devinput;none;hw_devinput;devinput/lircd.conf.devinput;
+User-space I2C driver;i2cuser;none;hw_i2cuser;;
+
+[Other serial port devices]
+Anir Multimedia Magic;animax;lirc_dev lirc_serial;hw_default;animax/lircd.conf.animax;
+CARACA;caraca;none;hw_caraca;caraca/lircd.conf.caraca;
+Creative Infra Receiver/CIMR100;creative;none;hw_creative;creative/lircd.conf.creative;
+IRdeo;irdeo;lirc_dev lirc_serial;hw_default;;
+IRdeo Remote;irdeo_remote;lirc_dev lirc_serial;hw_default;;
+Irman / UIR;irman;none;hw_irman;;
+Kanam Accent;accent;none;hw_accent;kanam_accent/lircd.conf.IR-100;
+Linksys NSLU2 (CTS2+GreenLED);nslu2;lirc_dev lirc_serial;hw_default;;
+Logitech/AST;logitech;none;hw_logitech;logitech/lircd.conf.logitech;
+PCMAK serial receiver;pcmak;none;hw_pcmak;pcmak/lircd.conf.pcmak;
+Miro PCTV receiver;pctv;none;hw_pinsys;pinnacle_systems/lircd.conf.pctv;
+Packard Bell receiver;packard_bell;lirc_dev lirc_serial;hw_default;packard_bell/lircd.conf.packard_bell;
+Radio Shack 15-2116;serial;lirc_dev lirc_serial;hw_default;radioshack/radioshack.conf;
+PixelView RemoteMaster RC2000/RC3000;remotemaster;none;hw_pixelview;pixelview/lircd.conf.remotemaster;
+REALmagic (bundled with Hollywood Plus DVD card);realmagic;none;hw_pixelview;sigma_designs/lircd.conf.realmagic;
+Slink-e (receive only);slinke;none;hw_slinke;;
+Silitek SM-1000;silitek;none;hw_silitek;silitek/lircd.conf.silitek;
+Tekram Irmate 210 (16x50 UART compatible serial port);tekram;lirc_dev lirc_sir;hw_default;;
+UIRT2 (receive only, UIR mode);uirt2;none;hw_uirt2;;
+UIRT2 (receive and transmit);uirt2_raw;none;hw_uirt2_raw;;
+[IrDA/CIR hardware]
+Actisys Act200L SIR driver support;act200l;lirc_dev lirc_sir;hw_default;;
+Actisys Act220L(+) SIR driver support;act220l;lirc_dev lirc_sir;hw_default;;
+SIR IrDA (built-in IR ports);sir;lirc_dev lirc_sir;hw_default;;
+Tekram Irmate 210 (16x50 UART compatible serial port);tekram;lirc_dev lirc_sir;hw_default;;
+Winbond 8769L CIR port (e.g. Acer Aspire 6530G);wpc8769l;lirc_dev lirc_wpc8769l;hw_default;acer/lircd.conf.Aspire_6530G;
+
+[PDAs]
+HP iPAQ;sa1100;lirc_dev lirc_sir;hw_default;;
+Sharp Zaurus;sa1100;lirc_dev lirc_sir;hw_default;;
+
+[USB devices]
+Philips SRM 7500 RF remote;srm7500libusb;none;hw_srm7500libusb;philips/lircd.conf.srm7500libusb;
+
