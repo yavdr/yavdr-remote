@@ -1,6 +1,6 @@
 # table rc-medion-x10-digitainer, type:other
 0x0000 = KEY_MUTE
-0x0002 = KEY_POWER
+0x0002 = KEY_POWER2
 0x0004 = KEY_DVD
 0x0005 = KEY_IMAGES
 0x0006 = KEY_AUDIO
