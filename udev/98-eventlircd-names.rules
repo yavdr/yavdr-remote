@@ -25,14 +25,6 @@ ATTRS{name}=="eventlircd", GOTO="end"
 ATTRS{name}=="Sundtek Ltd. Remote Control", \
   ENV{eventlircd_enable}="true"
 
-ATTRS{name}=="X10 Wireless Technology Inc USB Receiver", \
-  ENV{eventlircd_enable}="true", \
-  ENV{eventlircd_evmap}="03_0bc7_0006.evmap"
-
-ATTRS{name}=="X10 WTI RF receiver", \
-  ENV{eventlircd_enable}="true", \
-  ENV{eventlircd_evmap}="03_0bc7_0006_pollin.evmap"
-
 ATTRS{name}=="TT6400 DVB IR receiver", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="tt6400ir.evmap"
@@ -44,12 +36,11 @@ ATTRS{name}=="cx88 IR (TeVii S464 DVB-S/S2)", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="tevii.evmap"
 
-ATTRS{name}=="Nuvoton w836x7hg Infrared Remote Transceiver", \
-  ENV{eventlircd_enable}="true", \
-  ENV{eventlircd_evmap}="mce.evmap"
-
 ATTRS{name}=="cx88 IR (Hauppauge WinTV-HVR400", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="nova_hd_s2.evmap" 
 
+ATTRS{name}=="iMON Panel, Knob and Mouse(*:*)", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="imon_knob_panel.evmap" 
 LABEL="end"

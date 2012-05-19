@@ -1,0 +1,1 @@
+DRIVERS=="lirc_serial", ACTION=="add", SYMLINK+="lirc_serial.%n"

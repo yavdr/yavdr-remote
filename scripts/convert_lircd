@@ -1,0 +1,44 @@
+#!/usr/bin/perl
+
+
+%ref = ();
+
+open (REF, '</var/lib/vdr/remote.conf') or die "Can't read /var/lib/vdr/remote.conf!\n";
+
+while (<REF>) {
+
+    $line = $_;
+    $line =~ s/\r//;
+    $line =~ s/\n//;
+    if ($line !~ /^LIRC/) { next; }
+    @lines = split /\s/, $line;
+    $ref{$lines[0]} = $lines[1];
+
+}
+
+close(REF) or die "Can't close /var/lib/vdr/remote.conf!\n";
+
+%rem = ();
+
+open (REM, '<remote.conf') or die "Can't read remote.conf!\n";
+
+while (<REM>) {
+
+    $line = $_;
+    $line =~ s/\r//;
+    $line =~ s/\n//;
+    if ($line !~ /^LIRC/) { next; }
+    $line =~ s/ +/ /g;
+
+    @lines = split /\s/, $line;
+    $key = $ref{$lines[0]};
+    $rem{$lines[1]} = $key;
+
+}
+
+close(REM) or die "Can't close remote.conf!\n";
+
+while ( my ($key, $value) = each(%rem) ) {
+    print "$key => $value\n";
+}
+

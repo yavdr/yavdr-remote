@@ -1,0 +1,2 @@
+Home-brew KLS 1.6 profile (16x50 UART compatible serial port);serial;lirc_dev lirc_serial;hw_default;yavdr/kls-1.6-lircd.conf;
+Home-brew MCE profile (16x50 UART compatible serial port);serial;lirc_dev lirc_serial;hw_default;yavdr/rc6-mce-lircd.conf;

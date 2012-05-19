@@ -1,0 +1,72 @@
+#!/bin/bash 
+
+if [[ $UID -ne 0 ]]; then
+    echo "$0 must be run as root"
+    echo " Please use: sudo $0"
+    exit 1
+fi
+
+for rc in $( ir-keytable 2>&1 | grep rc/rc | egrep -o -e 'rc[0-9]{1,}')
+do
+  #echo $rc
+  INFO=$( ir-keytable 2>&1 | grep "$rc" -A 3)
+  echo "###***   sudo ir-keytable for $rc   ***###"
+  #echo -e $RC
+  #echo $INFO
+  ir-keytable 2>&1 | egrep $rc -A 3
+  echo "##########################################"
+  DRIVER=$( echo "$INFO" | grep "Driver" | sed -r 's/.*Driver\ (.*),.*/\1/')
+  TABLE=$(  echo "$INFO" | grep "table"  | sed -r 's/.*table\ (.*)/\1/')
+  TYPE=$( echo "$INFO"   | grep "Enabled protocols" | sed s/Enabled\ protocols:\ //g;)
+  KEYS=$(ir-keytable -r --sysdev $rc 2>&1 | grep "scancode" | sed 's/scancode\ //g;s/\ (.*//g;')
+  if [ "$1" = "" ]
+    then
+      echo "*** keytable $TABLE for $DRIVER ***"
+      echo ""
+      echo -e "# table $TABLE, type:$TYPE"
+      echo -e "$KEYS"
+      echo
+      echo "### End of Keytable for $TABLE ####"
+      echo "*** suggested entry for custom keytable in /etc/rc_maps.cfg: ***"
+      echo "$DRIVER    $TABLE   /etc/rc_keymaps/$TABLE"
+  fi
+
+  if [ "$1" = "set" ]
+    then
+  
+    RC_KEYTABLE="/etc/rc_keymaps/$TABLE"
+    TEMPLATE="/etc/yavdr/templates_custom/etc/rc_maps.cfg/90_$TABLE"
+    if [ -d /etc/yavdr/templates_custom/etc/rc_maps.cfg ]
+      then
+        echo "custom template-directory already exists"
+      else
+        mkdir -p /etc/yavdr/templates_custom/etc/rc_maps.cfg
+    fi
+  
+    if [ -e /etc/yavdr/templates_custom/etc/rc_maps.cfg/90_$TABLE ]
+      then
+        read -p "Do you want to replace existing custom template $TEMPLATE?" yn
+          case $yn in
+            [Yy]* ) echo "$DRIVER    $TABLE   /etc/rc_keymaps/$TABLE" > $TEMPLATE && process-template /etc/rc_maps.cfg;;
+            [Nn]* ) ;;
+             * ) echo "Please answer yes or no.";;
+            esac
+  else
+    echo "$DRIVER    $TABLE   /etc/rc_keymaps/$TABLE" > $TEMPLATE && process-template /etc/rc_maps.cfg
+  fi
+
+  if [ -e /etc/yavdr/templates_custom/etc/rc_maps.cfg/90_$TABLE ]
+    then
+          read -p "Do you want to replace existing custom keytable $RC_KEYTABLE?" yn
+    case $yn in
+        [Yy]* ) echo -e "# table $TABLE, type:$(echo $TYPE | sed 's/\(.*\)_NUMERIC_\([0-9]\)/\1_\2/g')" > $RC_KEYTABLE && echo -e "$KEYS" >> $RC_KEYTABLE;;
+        [Nn]* ) ;;
+        * ) echo "Please answer yes or no.";;
+    esac
+  else
+    echo -e "# table $TABLE, type:$(echo $TYPE | sed 's/\(.*\)_NUMERIC_\([0-9]\)/\1_\2/g')" > $RC_KEYTABLE && echo -e "$KEYS" >> $RC_KEYTABLE
+  fi
+  ir-keytable -a /etc/rc_maps.cfg --sysdev $rc
+fi
+done
+  

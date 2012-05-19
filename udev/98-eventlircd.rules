@@ -31,6 +31,12 @@ ATTRS{name}=="lircd", \
   ENV{eventlircd_enable}="true"
 
 #-------------------------------------------------------------------------------
+# Ask eventlircd to handle input event devices created by irserver2uinput. 
+#-------------------------------------------------------------------------------
+ATTRS{name}=="irserver2uinput", \
+  ENV{eventlircd_enable}="true"
+
+#-------------------------------------------------------------------------------
 # Ask eventlircd to handle input event devices created by bdremoteng. For this
 # to work, bdremoteng must be configured to output Linux input events and must
 # be configured to output key names that conform to LIRC namespace derived
@@ -131,33 +137,25 @@ ENV{ID_VENDOR_ID}=="0471", ENV{ID_MODEL_ID}=="0815", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
 
-ENV{ID_VENDOR_ID}=="15c2",ENV{ID_MODEL_ID}=="ffdc", \
-  ENV{eventlircd_enable}="true", \
-  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
-
-ENV{ID_VENDOR_ID}=="15c2", ENV{ID_MODEL_ID}=="0035", \
-  ENV{eventlircd_enable}="true", \
-  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
-
-ENV{ID_VENDOR_ID}=="15c2", ENV{ID_MODEL_ID}=="0036", \
-  ENV{eventlircd_enable}="true", \
-  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
-
-ENV{ID_VENDOR_ID}=="15c2", ENV{ID_MODEL_ID}=="0038", \
-  ENV{eventlircd_enable}="true", \
-  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
-
-ENV{ID_VENDOR_ID}=="15c2", ENV{ID_MODEL_ID}=="0045", \
-  ENV{eventlircd_enable}="true", \
-  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
-
 ENV{ID_VENDOR_ID}=="18b1", ENV{ID_MODEL_ID}=="0037", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
 
+ENV{ID_VENDOR_ID}=="04b4", ENV{ID_MODEL_ID}=="0101", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
+
+ENV{ID_VENDOR_ID}=="1d57", ENV{ID_MODEL_ID}=="ac01", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap" 
+
+ENV{ID_VENDOR_ID}=="22b8", ENV{ID_MODEL_ID}=="003b", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="03_$env{ID_VENDOR_ID}_$env{ID_MODEL_ID}.evmap"
+
 ENV{ID_VENDOR_ID}=="1784", ENV{ID_MODEL_ID}=="0004", \
-ENV{eventlircd_enable}="true", \
-ENV{eventlircd_evmap}="default.evmap"
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="default.evmap"
 
 # Enable wake-on-usb for the USB remotes.
 ENV{eventlircd_enable}=="true", RUN+="wakeup_enable"

@@ -1,0 +1,104 @@
+# LIRC - Hardware DataBase
+#
+# THIS IS A GENERATED FILE. DO NOT EDIT.
+#
+# This file lists all the remote controls supported by LIRC
+# in a parseable form.
+#
+# The format is:
+#
+# [remote controls type]
+# description;driver;lirc driver;HW_DEFAULT;lircd_conf;
+#
+#
+Home-brew (16x50 UART compatible serial port);serial;lirc_dev lirc_serial;hw_default;;
+Home-brew (parallel port);parallel;lirc_dev lirc_parallel;hw_default;;
+Network (UDP);udp;none;hw_udp;;
+
+[Home-brew (soundcard input)]
+Simple IR diode (EXPERIMENTAL);dsp;none;hw_dsp;;
+Receiver/transmitter using PortAudio (EXPERIMENTAL);audio;none;hw_audio;;
+IR receiver IC connected to audio input using ALSA (EXPERIMENTAL);audio_alsa;none;hw_audio_alsa;;
+
+[Other (MIDI, Bluetooth, etc.)]
+AOpen XC Cube EA65, EA65-II;ea65;none;hw_ea65;ea65/lircd.conf.ea65;
+Creative LiveDrive midi;livedrive_midi;none;hw_livedrive_midi;creative/lircd.conf.livedrive;
+Creative LiveDrive sequencer;livedrive_seq;none;hw_livedrive_seq;creative/lircd.conf.livedrive;
+Creative iNFRA CDROM;creative_infracd;none;hw_creative_infracd;creative/lircd.conf.infracd;
+Ericsson mobile phone via Bluetooth;bte;none;hw_bte;ericsson/lircd.conf.bte;
+User-space I2C driver;i2cuser;none;hw_i2cuser;;
+
+[Other serial port devices]
+Anir Multimedia Magic;animax;lirc_dev lirc_serial;hw_default;animax/lircd.conf.animax;
+CARACA;caraca;none;hw_caraca;caraca/lircd.conf.caraca;
+Creative Infra Receiver/CIMR100;creative;none;hw_creative;creative/lircd.conf.creative;
+IRdeo;irdeo;lirc_dev lirc_serial;hw_default;;
+IRdeo Remote;irdeo_remote;lirc_dev lirc_serial;hw_default;;
+Irman / UIR;irman;none;hw_irman;;
+Kanam Accent;accent;none;hw_accent;kanam_accent/lircd.conf.IR-100;
+Linksys NSLU2 (CTS2+GreenLED);nslu2;lirc_dev lirc_serial;hw_default;;
+Logitech/AST;logitech;none;hw_logitech;logitech/lircd.conf.logitech;
+PCMAK serial receiver;pcmak;none;hw_pcmak;pcmak/lircd.conf.pcmak;
+Miro PCTV receiver;pctv;none;hw_pinsys;pinnacle_systems/lircd.conf.pctv;
+Packard Bell receiver;packard_bell;lirc_dev lirc_serial;hw_default;packard_bell/lircd.conf.packard_bell;
+Pinnacle Systems PCTV (pro) receiver;pctv;none;hw_pinsys;pinnacle_systems/lircd.conf.pctv;
+Pinnacle Systems PCTV Sat receiver;pctv;none;hw_pinsys;pinnacle_systems/lircd.conf.pctv;
+PixelView RemoteMaster RC2000/RC3000;remotemaster;none;hw_pixelview;pixelview/lircd.conf.remotemaster;
+REALmagic (bundled with Hollywood Plus DVD card);realmagic;none;hw_pixelview;sigma_designs/lircd.conf.realmagic;
+Slink-e (receive only);slinke;none;hw_slinke;;
+Silitek SM-1000;silitek;none;hw_silitek;silitek/lircd.conf.silitek;
+Tekram Irmate 210 (16x50 UART compatible serial port);tekram;lirc_dev lirc_sir;hw_default;;
+UIRT2 (receive only, UIR mode);uirt2;none;hw_uirt2;;
+UIRT2 (receive and transmit);uirt2_raw;none;hw_uirt2_raw;;
+X10 MouseRemote RF Receiver (Serial);mouseremote;none;hw_mouseremote;x10/lircd.conf.mouseremote;
+X10 MouseRemote RF Receiver (PS/2);mouseremote_ps2;none;hw_mouseremote_ps2;x10/lircd.conf.mouseremote;
+X10 MP3 Anywhere RF Receiver;mp3anywhere;none;hw_mp3anywhere;x10/lircd.conf.mp3anywhere;
+
+[TV card]
+Adaptec AVC-2410;adaptec;lirc_dev lirc_i2c;hw_default;adaptec/lircd.conf.AVC-2410;
+Creative BreakOut-Box;breakoutbox;lirc_dev lirc_i2c;hw_default;creative/lircd.conf.breakoutbox;
+Dynalink Magic TView (card=48);cph03x;devinput;hw_default;cph03x/lircd.conf.cph03x;
+Hauppauge DVB-s card (ver. 2.1);hauppauge_dvb;lirc_dev;hw_default;hauppauge/lircd.conf.hauppauge;
+Hercules Smart TV Stereo (card=100);hercules_smarttv_stereo;lirc_dev lirc_i2c;hw_default;hercules/lircd.conf.smarttv_stereo;
+Jetway TV/Capture JW-TV878-FBK, Kworld KW-TV878RF (card=78);kworld;devinput;hw_default;kworld/lircd.conf.kworld;
+KNC ONE TV Station (-/SE/PRO/RDS);knc_one;lirc_dev lirc_i2c;hw_default;knc_one/lircd.conf.knc_one;
+Miro PCTV serial port receiver;pctv;none;hw_pinsys;pinnacle_systems/lircd.conf.pctv;
+Phoebe Tv Master + FM (card=22);cph06x;devinput;hw_default;cph03x/lircd.conf.cph03x;
+Technisat MediaFocus I;mediafocusI;none;hw_default;technisat/lircd.conf.mediafocusI;
+Tekram M230 Mach64 (and others bt829 based);tekram_bt829;lirc_dev lirc_bt829;hw_default;tekram/lircd.conf.m230;
+TView99 CPH063 (card=38);cph06x;devinput;hw_default;cph03x/lircd.conf.cph03x;
+Typhoon TView RDS / FM Stereo (card=53);knc_one;lirc_dev lirc_i2c;hw_default;knc_one/lircd.conf.knc_one;
+
+[IrDA/CIR hardware]
+Actisys Act200L SIR driver support;act200l;lirc_dev lirc_sir;hw_default;;
+Actisys Act220L(+) SIR driver support;act220l;lirc_dev lirc_sir;hw_default;;
+SIR IrDA (built-in IR ports);sir;lirc_dev lirc_sir;hw_default;;
+Tekram Irmate 210 (16x50 UART compatible serial port);tekram;lirc_dev lirc_sir;hw_default;;
+
+[PDAs]
+HP iPAQ;sa1100;lirc_dev lirc_sir;hw_default;;
+Sharp Zaurus;sa1100;lirc_dev lirc_sir;hw_default;;
+
+[USB devices]
+ADSTech USBX-707 USB IR Blaster;usbx;none;hw_usbx;adstech/lircd.conf.usbx-707;
+Apple Mac mini USB IR Receiver;macmini;none;hw_macmini;apple/lircd.conf.macmini;
+Aureal ATWF@83-W001 ESKY.CC remote;atwf83;none;hw_atwf83;aureal/lircd.conf.atwf83;
+Awox RF/IR Remote (userspace);awlibusb;none;hw_awlibusb;awlibusb/lircd.conf.awlibusb;
+Creative USB IR Receiver (SB0540);sb0540;none;hw_sb0540;creative/lircd.conf.alsa_usb;
+CommandIR Multi-IR Transceiver (userspace);commandir;none;hw_commandir;hauppauge/lircd.conf.hauppauge;
+DFC USB InfraRed Remote Control (userspace);dfclibusb;none;hw_dfclibusb;;
+Dign HV5 HTPC IR/VFD Module;sasem;lirc_dev lirc_sasem;hw_default;sasem/lircd.conf.sasem;
+FTDI FT232-based IR Receiver;ftdi;none;hw_ftdi;;
+Home Electronics Tira USB device;tira;none;hw_tira;;
+Home Electronics Tira USB device (timing mode);tira_raw;none;hw_tira_raw;;
+Iguanaworks USB IR Transceiver;iguanaIR;none;hw_iguanaIR;;
+IRLink VS USB IR Receiver;irlink;none;hw_irlink;;
+PCMAK USB receiver;pcmak_usb;none;hw_pcmak;pcmak/lircd.conf.pcmak;
+Remotec Multimedia PC Remote BW6130;bw6130;none;hw_bw6130;remotec/lircd.conf.BW6130;
+Sasem OnAir Remocon-V;sasem;lirc_dev lirc_sasem;hw_default;sasem/lircd.conf.sasem;
+Snapstream Firefly;atiusb;lirc_dev lirc_atiusb;hw_default;atiusb/lircd.conf.atiusb;
+Sound Blaster Extigy USB sound card (exaudio);exaudio;none;hw_default;;
+Sound Blaster Extigy/Audigy 2 NX (ALSA snd-usb-audio);alsa_usb;none;hw_alsa_usb;creative/lircd.conf.alsa_usb;
+USB-UIRT;usb_uirt_raw;none;hw_usb_uirt_raw;;
+VLSystem MPlay Blast;mplay;none;hw_mplay;vlsystem/lircd.conf.mplay;
+VLSystem MPlay Mini;mplay;none;hw_mplay;vlsystem/lircd.conf.mplay;

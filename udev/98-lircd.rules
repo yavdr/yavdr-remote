@@ -34,6 +34,10 @@ ENV{ID_VENDOR_ID}=="0fe9", ENV{ID_MODEL_ID}=="9010", \
   ENV{lircd_driver}="dvicoo", \
   ENV{lircd_conf}="/usr/share/yavdr-remote/remotes/dvicoo-lircd.conf"
 
+ENV{ID_VENDOR_ID}=="0471", ENV{ID_MODEL_ID}=="0617", \
+  ENV{lircd_driver}="srm7500libusb", \
+  ENV{lircd_conf}="/usr/share/yavdr-remote/remotes/philips-srm-7500-lircd.conf"
+
 ENV{ID_VENDOR_ID}=="0b48", ENV{ID_MODEL_ID}=="2003", \
   ENV{lircd_driver}="default", \
   ENV{lircd_conf}="/usr/share/yavdr-remote/remotes/ttusbir-lircd.conf" 

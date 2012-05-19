@@ -1,0 +1,16 @@
+# LIRC - Supplemental Remote Control DataBase
+#
+# This file contains just extra remote controls not in the core LIRC package
+#
+# The format is:
+#
+# [remote controls type]
+# description;driver;lirc driver;HW_DEFAULT;lircd_conf;
+#
+
+[Serial Port Devices]
+Radio Shack 15-2116;serial;lirc_dev lirc_serial;hw_default;radioshack/radioshack.conf;
+
+[TV card]
+Encore ELTV-FM;encore;lirc_dev lirc_i2c;hw_default;encore/enltv.conf;
+

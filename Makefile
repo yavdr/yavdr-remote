@@ -10,6 +10,10 @@ install:
 	install -m 0644 evmaps/* $(DESTDIR)/etc/eventlircd.d/
 	install -d $(DESTDIR)/usr/share/yavdr-remote/remotes
 	install -m 0644 lircd-conf/* $(DESTDIR)/usr/share/yavdr-remote/remotes
+	install -d $(DESTDIR)/usr/share/lirc/remotes/yavdr
+	install -m 0644 lircd-conf/* $(DESTDIR)/usr/share/lirc/remotes/yavdr
+	install -d $(DESTDIR)/usr/share/yavdr-remote/hwdb.d
+	install -m 0644 hwdb.d/* $(DESTDIR)/usr/share/yavdr-remote/hwdb.d
 	
 clean:
 
