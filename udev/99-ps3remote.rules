@@ -1,0 +1,2 @@
+ACTION=="add",SUBSYSTEM=="input",ATTRS{name}=="PS3 Remote Controller",SYMLINK+="input/ps3",RUN+="/sbin/initctl emit --no-wait ps3-detected"
+ACTION=="remove",SUBSYSTEM=="input",ATTRS{name}=="PS3 Remote Controller",SYMLINK+="input/ps3",RUN+="/sbin/initctl emit --no-wait ps3-lost"

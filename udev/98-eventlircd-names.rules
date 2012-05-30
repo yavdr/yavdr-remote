@@ -43,4 +43,8 @@ ATTRS{name}=="cx88 IR (Hauppauge WinTV-HVR400", \
 ATTRS{name}=="iMON Panel, Knob and Mouse(*:*)", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="imon_knob_panel.evmap" 
+  
+ATTRS{name}=="PS3 Remote", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="ps3remote.evmap"
 LABEL="end"
