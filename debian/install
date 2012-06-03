@@ -1,4 +1,5 @@
-etc/init/eventlircd.conf	etc/init/
-etc/init/irexec.conf	etc/init/
-etc/init/lircd.conf	etc/init/
-etc/init/setserial-minimal.conf	etc/init/
+etc/init/eventlircd.conf		etc/init/
+etc/init/irexec.conf			etc/init/
+etc/init/lircd.conf			etc/init/
+etc/init/setserial-minimal.conf		etc/init/
+templates/*				usr/share/yavdr/templates/
