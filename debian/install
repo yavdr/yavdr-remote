@@ -1,5 +1,9 @@
-etc/init/eventlircd.conf		etc/init/
-etc/init/irexec.conf			etc/init/
-etc/init/lircd.conf			etc/init/
-etc/init/setserial-minimal.conf		etc/init/
-templates/*				usr/share/yavdr/templates/
+etc/init/*			etc/init/
+templates/*			usr/share/yavdr/templates/
+udev/*				lib/udev/rules.d/
+lircd2uinput/lircd2uinput	usr/bin/
+rc_keymaps/*			lib/udev/rc_keymaps/
+evmaps/*			etc/eventlircd.d/
+lircd-conf/*			usr/share/yavdr-remote/remotes
+lircd-conf/*			usr/share/lirc/remotes/yavdr
+hwdb.d/*			usr/share/yavdr-remote/hwdb.d

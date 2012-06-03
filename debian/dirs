@@ -1,0 +1,6 @@
+usr/bin
+etc/eventlircd.d
+lib/udev/rc_keymaps
+usr/share/yavdr-remote/remotes
+usr/share/lirc/remotes/yavdr
+usr/share/yavdr-remote/hwdb.d

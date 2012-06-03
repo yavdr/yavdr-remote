@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty", DRIVERS=="ftdi_sio", ATTRS{interface}=="IRTrans USB", ACTION=="add", RUN+="/sbin/initctl emit --no-wait start-irserver"
