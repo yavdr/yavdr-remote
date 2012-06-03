@@ -14,6 +14,7 @@ install:
 	install -m 0644 lircd-conf/* $(DESTDIR)/usr/share/lirc/remotes/yavdr
 	install -d $(DESTDIR)/usr/share/yavdr-remote/hwdb.d
 	install -m 0644 hwdb.d/* $(DESTDIR)/usr/share/yavdr-remote/hwdb.d
-	
+	install -d $(DESTDIR)/usr/bin
+	install -m 0755 lircd2uinput/lircd2uinput $(DESTDIR)/usr/bin/	
 clean:
 
