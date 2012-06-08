@@ -6,4 +6,4 @@ evmaps/*			etc/eventlircd.d/
 lircd-conf/*			usr/share/yavdr-remote/remotes
 lircd-conf/*			usr/share/lirc/remotes/yavdr
 hwdb.d/*			usr/share/yavdr-remote/hwdb.d
-usr/bin/*			usr/bin
+scripts/*			usr/bin/
