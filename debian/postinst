@@ -15,8 +15,7 @@ case "$1" in
     hdf_prefill "system.remote.lirc.receiver.lircd_conf" "lircd.conf"
     hdf_prefill "system.remote.lirc.option.repeat" "0"
 
-    process-template /etc/init/lircd2uinput.conf
-    process-template /etc/rc_maps.cfg
+    /usr/bin/yavdr-template-remote
   ;;
 
 esac

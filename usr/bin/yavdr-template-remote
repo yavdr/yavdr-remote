@@ -1,0 +1,5 @@
+#!/bin/sh
+
+process-template --owner root --group root --mode 0644 /etc/init/lircd2uinput.conf
+process-template --owner root --group root --mode 0644 /etc/rc_maps.cfg
+
