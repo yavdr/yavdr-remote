@@ -3,18 +3,16 @@
 case "$1" in
   configure)
     # prefill hdf
-    . /usr/share/yavdr/helpers/hdf_prefill
+    yavdr-db-tool -k system.remote.lirc.active -a preset -v "0"
+    yavdr-db-tool -k system.remote.lirc.receiver.serial_port -a preset -v "/dev/ttyS0"
+    yavdr-db-tool -k system.remote.lirc.receiver.description -a preset -v "Home-brew MCE profile (16x50 UART compatible serial port)"
+    yavdr-db-tool -k system.remote.lirc.receiver.driver -a preset -v "serial"
+    yavdr-db-tool -k system.remote.lirc.receiver.lirc_driver -a preset -v "lirc_dev lirc_serial"
+    yavdr-db-tool -k system.remote.lirc.receiver.hw_default -a preset -v "hw_default"
+    yavdr-db-tool -k system.remote.lirc.receiver.lircd_conf -a preset -v "lircd.conf"
+    yavdr-db-tool -k system.remote.lirc.option.repeat -a preset -v "0"
 
-    hdf_prefill "system.remoted" "eventlircd"
-    hdf_prefill "system.remote.lirc.active" "0"
-    hdf_prefill "system.remote.lirc.receiver.serial_port" "/dev/ttyS0"
-    hdf_prefill "system.remote.lirc.receiver.description" "Home-brew MCE profile (16x50 UART compatible serial port)"
-    hdf_prefill "system.remote.lirc.receiver.driver" "serial"
-    hdf_prefill "system.remote.lirc.receiver.lirc_driver" "lirc_dev lirc_serial"
-    hdf_prefill "system.remote.lirc.receiver.hw_default" "hw_default"
-    hdf_prefill "system.remote.lirc.receiver.lircd_conf" "lircd.conf"
-    hdf_prefill "system.remote.lirc.option.repeat" "0"
-
+    # template
     /usr/bin/yavdr-template-remote
   ;;
 
