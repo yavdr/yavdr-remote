@@ -1,5 +1,6 @@
 #!/bin/sh -e
 
+logger -t yavdr-template-remote "templating"
 process-template --owner root --group root --mode 0644 /etc/init/lircd2uinput.conf
 process-template --owner root --group root --mode 0644 /etc/rc_maps.cfg
 
