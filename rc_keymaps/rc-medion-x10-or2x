@@ -1,4 +1,4 @@
-# table rc-medion-x10-digitainer, type:other
+# table rc-medion-x10-or2x, type:other
 0x0000 = KEY_MUTE
 0x0002 = KEY_POWER2
 0x0004 = KEY_DVD
@@ -45,6 +45,6 @@
 0x0033 = KEY_GREEN
 0x0034 = KEY_YELLOW
 0x0035 = KEY_BLUE
+0x0036 = KEY_ENTER
 0x0037 = KEY_SCREEN
 0x0038 = KEY_SUBTITLE
-0x0070 = KEY_DOWN
