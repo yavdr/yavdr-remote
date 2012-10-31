@@ -1,0 +1,3 @@
+KEY_EXIT        = KEY_ESC
+KEY_SETUP       = KEY_MENU
+KEY_POWER       = KEY_POWER2
