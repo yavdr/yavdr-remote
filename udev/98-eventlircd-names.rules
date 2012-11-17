@@ -29,6 +29,10 @@ ATTRS{name}=="TT6400 DVB IR receiver", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="tt6400ir.evmap"
 
+ATTRS{name}=="Budget-CI dvb ir receiver saa7146 (0)", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="tt1501ir.evmap"
+
 ATTRS{name}=="i2c IR (Hauppauge WinTV PVR-350", \
   ENV{eventlircd_enable}="true"
 
