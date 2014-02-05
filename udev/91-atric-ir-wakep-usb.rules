@@ -1,0 +1,1 @@
+ACTION=="add", KERNEL=="ttyACM[0-9]*", SUBSYSTEM=="tty", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="f844", SYMLINK+="irman"
