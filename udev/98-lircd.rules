@@ -24,7 +24,6 @@ SUBSYSTEM=="lirc", \
 # up as event devices are not included as as they are handled by eventlircd.
 #-------------------------------------------------------------------------------
 SUBSYSTEMS=="usb", GOTO="begin-usb"
-SUBSYSTEMS=="usb", GOTO="begin-usb"
 GOTO="end-usb"
 LABEL="begin-usb"
 
