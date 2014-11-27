@@ -47,4 +47,9 @@ ATTRS{name}=="iMON Panel, Knob and Mouse(*:*)", \
 ATTRS{name}=="PS3 Remote", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="ps3remote.evmap"
+
+ATTRS{name}=="libcec-daemon", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="CEC.evmap"
+
 LABEL="end"
