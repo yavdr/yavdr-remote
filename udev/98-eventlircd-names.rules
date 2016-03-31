@@ -25,6 +25,9 @@ ATTRS{name}=="eventlircd", GOTO="end"
 ATTRS{name}=="Sundtek Remote Control", \
   ENV{eventlircd_enable}="true"
 
+ATTRS{name}=="Sundtek Ltd. Remote Control", \
+  ENV{eventlircd_enable}="true"
+
 ATTRS{name}=="TT6400 DVB IR receiver", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="tt6400ir.evmap"
