@@ -22,7 +22,7 @@ ATTRS{name}=="eventlircd", GOTO="end"
 #-------------------------------------------------------------------------------
 # Ask eventlircd to handle input event devices created by Sundtek DVB devices.
 #-------------------------------------------------------------------------------
-ATTRS{name}=="Sundtek Ltd. Remote Control", \
+ATTRS{name}=="Sundtek Remote Control", \
   ENV{eventlircd_enable}="true"
 
 ATTRS{name}=="TT6400 DVB IR receiver", \
