@@ -22,6 +22,9 @@ ATTRS{name}=="eventlircd", GOTO="end"
 #-------------------------------------------------------------------------------
 # Ask eventlircd to handle input event devices created by Sundtek DVB devices.
 #-------------------------------------------------------------------------------
+ATTRS{name}=="Sundtek Remote Control", \
+  ENV{eventlircd_enable}="true"
+
 ATTRS{name}=="Sundtek Ltd. Remote Control", \
   ENV{eventlircd_enable}="true"
 
