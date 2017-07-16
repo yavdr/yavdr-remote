@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 7.0.50~)
 
 Package: yavdr-remote
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, ir-keytable
 Recommends: eventlircd
 Description: yaVDR remote configuration files
  scripts, evmaps, keymaps, udev rules, lircd files
