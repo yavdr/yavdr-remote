@@ -171,6 +171,9 @@ ENV{ID_VENDOR_ID}=="1784", ENV{ID_MODEL_ID}=="0004", \
 # Enable wake-on-usb for the USB remotes.
 ENV{eventlircd_enable}=="true", RUN+="wakeup_enable"
 
+# Set Tag für xorg input device configuration
+ENV{eventlircd_enable}=="true", ENV{ID_INPUT.tags}+="eventlircd"
+
 LABEL="end-usb"
 
 LABEL="end"
