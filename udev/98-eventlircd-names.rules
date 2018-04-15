@@ -55,4 +55,5 @@ ATTRS{name}=="libcec-daemon", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="CEC.evmap"
 
+ENV{eventlircd_enable}=="true", ENV{ID_INPUT.tags}+="eventlircd"
 LABEL="end"
