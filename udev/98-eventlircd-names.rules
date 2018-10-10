@@ -51,6 +51,10 @@ ATTRS{name}=="PS3 Remote", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="ps3remote.evmap"
 
+ATTRS{name}=="STMicroelectronics STM32 IRMP HID-KBD-Device", \
+  ENV{eventlircd_enable}="true", \
+  ENV{eventlircd_evmap}="STM32_IRMP.evmap"
+
 ATTRS{name}=="libcec-daemon", \
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="CEC.evmap"
