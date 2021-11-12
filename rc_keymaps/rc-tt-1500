@@ -1,4 +1,4 @@
-# table rc-tt-1500 type: rc-5
+# table rc-tt-1500, type: rc-5
 0x1501 KEY_POWER2
 0x1522 KEY_EPG
 0x1512 KEY_INFO
