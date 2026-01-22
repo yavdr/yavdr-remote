@@ -174,12 +174,12 @@ ENV{ID_VENDOR_ID}=="20a0", ENV{ID_MODEL_ID}=="0006", \
   ENV{eventlircd_evmap}="flirc.evmap"
 
 # STM32 HID-KBD
-ATTRS{ID_VENDOR_ID}=="1209", ATTRS{ID_MODEL_ID}=="4445",\
+ENV{ID_VENDOR_ID}=="1209", ENV{ID_MODEL_ID}=="4445",\
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="03_1209_4445.evmap"
 
 # IRMP PICO HID-KBD
-ATTRS{ID_VENDOR_ID}=="1209", ATTRS{ID_MODEL_ID}=="4446",\
+ENV{ID_VENDOR_ID}=="1209", ENV{ID_MODEL_ID}=="4446",\
   ENV{eventlircd_enable}="true", \
   ENV{eventlircd_evmap}="03_1209_4446.evmap"
 
